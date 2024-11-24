@@ -1,7 +1,6 @@
 import { useState } from "react"
 import r2 from "../images/r2.png"
 import { useTranslation } from "react-i18next"
-import './Header.css'
 
 const Header = () => {
     const { t, i18n } = useTranslation();

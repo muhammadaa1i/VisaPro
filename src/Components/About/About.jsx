@@ -10,11 +10,11 @@ const About = () => {
     return (
         <div id='populars' className='poulars m-auto'>
 
-            <div className="container">
+            <div className="popular-in max-w-[1300px] w-full h-auto m-auto ">
 
-                <div className='max-w-[210px] w-full h-auto flex flex-col justify-center items-center max-p992:m-auto'>
+                <div className='max-w-[210px] ml-[60px] w-full h-auto flex flex-col justify-center items-center max-p992:m-auto'>
 
-                    <h3 className='text-[50px] font-sans text-left font-bold max-p992:text-[30px]  '>
+                    <h3 className='text-[30px] p992:text-[50px] mx-auto text-center p992:text-left p992:mx-[0px] font-bold p992:mt-[50px]'>
                         {t('Populars')}
 
                         <div class="animate-linear-1 block w-[48px] h-[5px] bg-[#f00] max-p992:m-auto "></div>

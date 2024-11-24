@@ -110,7 +110,7 @@ const Works = () => {
 
                     </div>
 
-                    <div data-aos="zoom in" className='prioritet-con2 max-w-[1260px] w-full h-auto border-2 border-red-600 pt-20 flex flex-row justify-between aos-init aos-animate '>
+                    <div data-aos="zoom in" className='prioritet-con2 max-w-[1260px] w-full h-auto border-2 border-red-600 pt-20 flex flex-row justify-between aos-init aos-animate flex-wrap '>
 
                         <div className="pr-card1 max-w-[220px] w-full h-auto border-2 border-fuchsia-600 flex flex-col text-white gap-5 items-center ">
                             <img className='max-w-[135px] w-full max-h-[135px] h-full ' src={clock} />
@@ -147,7 +147,7 @@ const Works = () => {
 
                         </div>
 
-                        <div className="nums flex flex-row max-w-[970px] w-full h-auto text-white border-2 border-white justify-between pb-5 ">
+                        <div className="nums flex flex-row max-w-[970px] w-full h-auto text-white border-2 border-white justify-between pb-5 flex-wrap">
 
                             <div data-aos="zoom-in" className="num-card1 border-2 border-amber-500 gap-[20px] flex flex-col aos-init aos-animate ">
                                 <h1 className='text-[100px] font-sans font-bold '>7320</h1>

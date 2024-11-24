@@ -4,7 +4,6 @@ import axios from "axios";
 import { positions } from "@mui/system";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
-import './Contact.css'
 
 const Contact = () => {
     const { t, i18n } = useTranslation();
