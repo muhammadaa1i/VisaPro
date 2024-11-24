@@ -23,13 +23,13 @@ const About = () => {
 
                 </div>
 
-                <div className='carousel2 border-2 border-emerald-800'>
+                <div className='carousel2 container'>
                     <Carousel2 />
                 </div>
 
             </div>
 
-            {/* <div className="about max-w-[1920px] w-full h-auto mt-[50px] px-[15px] border-2 border-y-red-600 ">
+            <div id='about' className="about max-w-[1920px] w-full h-auto mt-[70px] px-[15px] border-2 border-y-red-600">
 
                 <div className="about-card m-auto max-w-[1270px] w-full h-auto flex flex-row justify-between flex-wrap gap-[10px] p1320:gap-5 border-2 border-gray-900 ">
 
@@ -61,7 +61,7 @@ const About = () => {
 
                 </div>
 
-            </div> */}
+            </div>
 
 
 

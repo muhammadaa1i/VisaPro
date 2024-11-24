@@ -1,40 +1,98 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import './Carousel.css';
-import { Pagination } from 'swiper/modules';
-import { useTranslation } from 'react-i18next';
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import c1 from "../images/c1.jpg";
+import c2 from "../images/c2.jpg";
+import c3 from "../images/c3.jpg";
 
 export default function Carousel() {
-    const { t, i18n } = useTranslation();
-    const handleChange = (event) => {
-        const selectedLanguage = event.target.value;
-        i18n.changeLanguage(selectedLanguage)
-    }
+    const { t } = useTranslation();
+    const [currentSlide, setCurrentSlide] = useState(0);
+    const [startX, setStartX] = useState(0);
+    const [endX, setEndX] = useState(0);
+
+    const slides = [
+        {
+            id: 0,
+            image: c1,
+            text: t("Your comfort in travel is our concern."),
+        },
+        {
+            id: 1,
+            image: c2,
+            text: t("Reliable visa processing for all countries."),
+        },
+        {
+            id: 2,
+            image: c3,
+            text: t("The best tourist routes at affordable prices."),
+        },
+    ];
+
+    const handleNext = () => {
+        setCurrentSlide((prev) => (prev + 1) % slides.length);
+    };
+
+    const handlePrev = () => {
+        setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+    };
+
+    const handleTouchStart = (e) => {
+        setStartX(e.touches[0].clientX);
+    };
+
+    const handleTouchMove = (e) => {
+        setEndX(e.touches[0].clientX);
+    };
+
+    const handleTouchEnd = () => {
+        if (startX - endX > 50) {
+            handleNext();
+        } else if (endX - startX > 50) {
+            handlePrev();
+        }
+    };
+
+    const goToSlide = (index) => {
+        setCurrentSlide(index);
+    };
 
     return (
-        <>
-            <Swiper pagination={true} modules={[Pagination]} className="mySwiper w-full h-full p-0 " slidesPerView={1} spaceBetween={0} centeredSlides={true} style={{ width: '100%', height: '100%' }} >
-
-                <SwiperSlide>
-                    <div className='swp1 w-full h-full border-2 border-red-800 flex justify-center items-center p-0 max-p992:max-h-[900px]  ' >
-                        <h1 class="max-w-[900px] w-full h-auto text-white bg-black uppercase bg-opacity-70 px-4 py-2 rounded-2xl text-5xl font-bold text-center font-sans max-p992:max-w-[600px] max-p992:text-[30px] max-p768:text-[22px] max-p768:max-w-[500px] ">{t('Your comfort in travel is our concern.')}</h1>
+        <div className="relative w-full h-[110vh] overflow-hidden">
+            {/* Slayder */}
+            <div
+                className="w-full h-[110vh] flex transition-transform duration-500 ease-in-out"
+                style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+                onTouchStart={handleTouchStart}
+                onTouchMove={handleTouchMove}
+                onTouchEnd={handleTouchEnd}
+            >
+                {slides.map((slide) => (
+                    <div
+                        key={slide.id}
+                        className="w-full h-full flex-shrink-0 bg-cover bg-center flex justify-center items-center"
+                        style={{ backgroundImage: `url(${slide.image})` }}
+                    >
+                        <h1 className="text-white leading-[1.2] bg-black uppercase bg-opacity-50 px-4 py-2 rounded-2xl text-[14px] p768:text-[22px] max-w-[300px] p768:max-w-[500px] p992:text-[48px] p992:max-w-[900px] w-full font-bold text-center">
+                            {slide.text}
+                        </h1>
                     </div>
-                </SwiperSlide>
-                
-                <SwiperSlide>
-                    <div className='swp2 w-full h-full m-auto border-2 border-red-800 ml-[-5px] flex justify-center items-center p-0 max-p992:max-h-[900px]  '>
-                        <h1 class="max-w-[900px] w-full h-auto text-white bg-black uppercase bg-opacity-70 px-4 py-2 rounded-2xl text-5xl font-bold text-center font-sans max-p992:max-w-[600px] max-p992:text-[30px] max-p768:text-[22px] max-p768:max-w-[500px] ">{t('Reliable visa processing for all countries.')}</h1>
-                    </div>
-                </SwiperSlide>
+                ))}
+            </div>
 
-                <SwiperSlide>
-                    <div className='swp3 w-full h-full border-2 border-red-800 flex justify-center items-center p-0 max-p992:max-h-[900px]  '>
-                        <h1 class="max-w-[900px] w-full h-auto text-white bg-black uppercase bg-opacity-70 px-4 py-2 rounded-2xl text-5xl font-bold text-center font-sans max-p992:max-w-[600px] max-p992:text-[30px] max-p768:text-[22px] max-p768:max-w-[500px] ">{t('The best tourist routes at affordable prices.')}</h1>
-                    </div>
-                </SwiperSlide>
-
-            </Swiper>
-        </>
+            {/* Pagination Tugmalari */}
+            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                {slides.map((_, index) => (
+                    <button
+                        key={index}
+                        className={`h-3 w-3 rounded-full ${
+                            currentSlide === index
+                                ? "bg-green-500"
+                                : "bg-gray-400"
+                        }`}
+                        onClick={() => goToSlide(index)}
+                    ></button>
+                ))}
+            </div>
+        </div>
     );
 }

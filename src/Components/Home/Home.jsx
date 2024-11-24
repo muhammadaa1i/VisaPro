@@ -19,14 +19,14 @@ const Home = () => {
     }
 
     return (
-        <div className='site border-4 border-fuchsia-900 flex flex-col justify-center '>
+        <div className='site bg-white border-4 border-fuchsia-900'>
             <Header />
             <Carousel />
-            {/* <About />
+            <About />
             <Countries />
             <Works />
             <Services />
-            <Contact /> */}
+            <Contact />
         </div>
     )
 }

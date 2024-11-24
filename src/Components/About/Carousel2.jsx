@@ -21,7 +21,7 @@ export default function App() {
         spaceBetween={0}
         modules={[Pagination, Navigation]}
         navigation={true}
-        className="mySwiper2 container w-full flex flex-row gap-[50px] "
+        className="mySwiper2 max-w-[1300px] w-full h-auto m-auto border-2 border-green-500 flex flex-row gap-[50px] "
       >
 
         <SwiperSlide>

@@ -13,21 +13,22 @@ const Header = () => {
         i18n.changeLanguage(selectedLanguage);
         localStorage.setItem('i18nextLng', selectedLanguage);
     }
+
     const [btn, setBtn] = useState(false)
-    const handleLinkClick = (event, target) => {
+    const handleLinkClick = (target) => {
         setBtn(false)
         setTimeout(() => {
-            window.location.hash = target
-        }, 100)
+            document.querySelector(target)?.scrollIntoView({ behavior: "smooth" })
+        }, 100);
     }
 
     return (
-        <div className="relative bg-white ">
+        <div className="relative ">
 
-            <nav className='navbar fixed w-[100vw] bg-white h-20 flex justify-between items-center px-4 py-2 z-50 shadow-md'>
+            <nav style={{ backgroundImage: "none" }} className='navbar fixed w-[100vw] bg-white h-20 flex justify-between items-center px-4 py-2 z-50 shadow-md max-p992:hidden'>
 
                 <a className='nav-href'>
-                    <img className='nav-img w-[100px]' src={r2} />
+                    <img className='nav-img w-[50px] h-[50px]' src={r2} />
                 </a>
 
                 <ul className="menu h-auto flex uppercase font-bold text-[14px] gap-8 ml-auto mr-[30px] font-sans max-p992:hidden ">
@@ -64,23 +65,29 @@ const Header = () => {
 
             </nav>
 
-            <div class="navbar-mobile hidden max-p992:block ">
+            <div class="navbar-mobile w-[100vw] m-auto bg-white h-[60px] py-2 px-4 hidden max-p992:block max-p992:fixed z-[99]">
 
-                <div className="flex flex-row max-w-[170px] w-full h-auto justify-between items-center absolute top-5 right-2 ">
+                <a className='nav-href hidden max-p992:block'>
+                    <img className='nav-img w-[50px] h-[50px]' src={r2} />
+                </a>
 
-                    <a href class="text-black font-sans text-[16px]">+99899 712 66 66</a>
+                <div className="rem flex flex-row max-w-[170px] w-full h-auto justify-between items-center absolute top-5 right-2">
 
-                    <button onClick={() => setBtn(!btn)} class="burger-btn z-[60] top-[30px] right-[20px] flex flex-col gap-1 ">
-                        <div className="w-7 h-1 bg-red-600 "></div>
-                        <div className="w-7 h-1 bg-red-600 "></div>
-                        <div className="w-7 h-1 bg-red-600 "></div>
+                    <a href class="text-black font-sans text-[16px] z-[99]">+99899 712 66 66</a>
+
+                    <button onClick={() => setBtn(!btn)} className="w-[30px] h-6 z-[80] flex flex-col items-center justify-center">
+                        {btn ? (<i className="fa-solid fa-xmark text-red-600 text-3xl mr-2"></i>) : (
+                            <>
+                                <div className="w-7 h-1 bg-red-600 mb-1"></div>
+                                <div className="w-7 h-1 bg-red-600 mb-1"></div>
+                                <div className="w-7 h-1 bg-red-600"></div>
+                            </>
+                        )}
                     </button>
 
                 </div>
 
-                {btn && <div className="mobile-menu z-10 fixed left-0 w-full h-[100dvb] bg-white flex flex-col items-center shadow-md p-[20px] top-0 opacity-100 ">
-
-                    {btn === true && <button className="text-red-600 font-bold text-3xl absolute top-6 right-5" onClick={() => setBtn(!btn)}>X</button>}
+                {btn && <div className="mobile-menu z-10 fixed left-0 w-full h-[100vh] bg-white flex flex-col items-center shadow-md p-[20px] top-0 opacity-100 ">
 
                     <div class="mobile-nav w-full h-full flex flex-col items-center justify-center">
 
@@ -91,24 +98,24 @@ const Header = () => {
                             </li>
 
                             <li>
-                                <a onClick={() => handleLinkClick('#about')} aria-current="page" href="#country" class="router-link-active router-link-exact-active">{t('countries')}</a>
+                                <a onClick={() => handleLinkClick('#countries')} aria-current="page" href="#countries" class="router-link-active router-link-exact-active">{t('countries')}</a>
                             </li>
 
                             <li>
-                                <a onClick={() => handleLinkClick('#about')} aria-current="page" href="#sevice" class="router-link-active router-link-exact-active">{t("services")}</a>
+                                <a onClick={() => handleLinkClick('#services')} aria-current="page" href="#sevices" class="router-link-active router-link-exact-active">{t("services")}</a>
                             </li>
 
                             <li>
-                                <a onClick={() => handleLinkClick('#about')} aria-current="page" href="#works" class="router-link-active router-link-exact-active">{t('our works')}</a>
+                                <a onClick={() => handleLinkClick('#works')} aria-current="page" href="#works" class="router-link-active router-link-exact-active">{t('our works')}</a>
                             </li>
 
                             <li>
-                                <a onClick={() => handleLinkClick('#about')} aria-current="page" href="#contact" class="router-link-active router-link-exact-active">{t('contact')}</a>
+                                <a onClick={() => handleLinkClick('#contact')} aria-current="page" href="#contact" class="router-link-active router-link-exact-active">{t('contact')}</a>
                             </li>
 
                         </ul>
 
-                        <div class="selected__custom flex items-center mt-4">
+                        <div class="selected_custom flex items-center mt-4">
 
                             <select class="outline-none text-white bg-black" value={languages} onChange={handleChange} id='lng'>
                                 <option value="en">EN</option>
