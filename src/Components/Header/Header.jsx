@@ -70,7 +70,7 @@ const Header = () => {
                     <img className='nav-img w-[50px] h-[50px]' src={r2} />
                 </a>
 
-                <div className="rem flex flex-row max-w-[170px] w-full h-auto justify-between items-center absolute top-5 right-2">
+                <div className="rem flex flex-row max-w-[170px] w-full h-auto justify-between items-center absolute top-5 right-2 max-p470:right-0">
 
                     <a href class="text-black font-sans text-[16px] z-[99]">+99899 712 66 66</a>
 
@@ -86,7 +86,7 @@ const Header = () => {
 
                 </div>
 
-                {btn && <div className="mobile-menu z-10 fixed left-0 w-full h-[100vh] bg-white flex flex-col items-center shadow-md p-[20px] top-0 opacity-100 ">
+                {btn && <div className="mobile-menu z-10 fixed left-0 w-full h-[100vh] bg-white flex flex-col items-center shadow-md p-[20px] top-0 opacity-100 max-p470:max-w-[470px] ">
 
                     <div class="mobile-nav w-full h-full flex flex-col items-center justify-center">
 
