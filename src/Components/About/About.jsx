@@ -28,9 +28,9 @@ const About = () => {
 
             </div>
 
-            <div id='about' className="about max-w-[1920px] w-full h-auto mt-[70px] px-[15px]">
+            <div id='about' className="about w-full h-auto mt-[70px] px-[15px]">
 
-                <div className="about-card m-auto max-w-[1270px] w-full h-auto flex flex-row justify-between gap-[10px] p1320:gap-5 max-p992:flex-col ">
+                <div className="about-card m-auto max-w-[1270px] w-full h-auto flex flex-row justify-between gap-[10px] max-p992:flex-col ">
 
                     <div className='flex flex-col justify-center '>
 
@@ -38,7 +38,7 @@ const About = () => {
 
                         <h3 className='text-[30px] p992:text-[50px] mx-auto text-center p992:text-left p992:mx-[0px] font-bold p992:mt-[50px] '>{t('About')}</h3>
 
-                        <span class="animate-linear-1 mx-auto mt-[5px] block w-[48px] h-[5px] bg-[#f00]"></span>
+                        <span class="animate-linear-1 block w-[48px] h-[5px] bg-[#f00] max-p992:mx-auto"></span>
 
                         <h5 className='max-w-[570px] w-full text-[18px] font-medium text-black mt-[30px] font-sans max-p992:m-auto max-p992:max-w-[650px] '>
                             {t('EASY VISA CONSULTING is a rapidly growing company specializing in visa support for travelers. We ensure that your trips are comfortable and worry-free.')}

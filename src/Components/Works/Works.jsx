@@ -14,37 +14,34 @@ const Works = () => {
     const languages = localStorage.getItem('i18nextLng');
 
     return (
-        <div id='works' className="works m-auto max-w-[1920px] w-full h-auto border-2 border-cyan-700 pt-[100px] ">
+        <div id='works' className="works m-auto max-w-[1920px] w-full h-auto pt-[100px] ">
 
             <div className="works-con max-w-[1300px] w-full h-auto m-auto border-2 border-fuchsia-700 flex flex-col ">
 
                 <div data-aos="fade-right" class="aos-init aos-animate">
 
-                    <h3 className='text-[50px] font-sans text-black font-bold '>{t('Excursion')}</h3>
+                    <h3 className='text-[50px] font-sans text-black font-bold max-p992:text-[30px] max-p992:text-center '>{t('Excursion')}</h3>
 
-                    <span class="animate-linear-1 mt-[5px] block w-[48px] h-[5px] bg-[#f00]"></span>
+                    <span class="animate-linear-1 mt-[5px] block w-[48px] h-[5px] bg-[#f00] max-p992:m-auto"></span>
 
                 </div>
 
-                <div className="movie-cards max-w-[1300px] w-full h-auto p-4 flex flex-row justify-between flex-wrap ">
+                <div className="movie-cards max-w-[1300px] w-full h-auto p-4 flex flex-row justify-between flex-wrap max-p640:gap-5 ">
 
-                    <div className="moviecard1 max-w-[300px] w-full h-auto p-1 bg-white mx-auto">
+                    <div className="moviecard1 max-w-[300px] w-full h-auto p-1 bg-white mx-auto max-p470:h-72">
                         <div className="overplay relative">
-                            <img className='absolute max-w-[100px] w-full h-auto top-[-20px] left-[-25px] ' src={r2} />
                             <video controls className='max-w-[300px] w-full h-auto rounded-2xl shadow-lg mx-auto ' src={v1}></video>
                         </div>
                     </div>
 
                     <div className="moviecard2 max-w-[300px] w-full h-auto p-1 bg-white mx-auto">
                         <div className="overplay relative">
-                            <img className='absolute max-w-[100px] w-full h-auto top-[-20px] left-[-25px] ' src={r2} />
                             <video controls className='max-w-[300px] w-full h-auto rounded-2xl shadow-lg mx-auto ' src={v2}></video>
                         </div>
                     </div>
 
                     <div className="moviecard3 max-w-[300px] w-full h-auto p-1 bg-white mx-auto">
                         <div className="overplay relative">
-                            <img className='absolute max-w-[100px] w-full h-auto top-[-20px] left-[-25px] ' src={r2} />
                             <video controls className='max-w-[300px] w-full h-auto rounded-2xl shadow-lg mx-auto ' src={v3}></video>
                         </div>
                     </div>
@@ -53,36 +50,30 @@ const Works = () => {
 
                 <div data-aos="fade-right" class="aos-init aos-animate">
 
-                    <h3 className='text-[50px] font-sans text-black font-bold mt-[50px] '>{t('Client Reviews')}</h3>
+                    <h3 className='text-[50px] font-sans text-black font-bold mt-[50px] max-p992:text-center max-p992:text-[30px] '>{t('Client Reviews')}</h3>
 
-                    <span class="animate-linear-1 mt-[5px] block w-[48px] h-[5px] bg-[#f00]"></span>
+                    <span class="animate-linear-1 mt-[5px] block w-[48px] h-[5px] bg-[#f00] max-p992:m-auto "></span>
 
                 </div>
 
-                <div className="movie-cards2 max-w-[1300px] w-full h-auto p-4 flex flex-row justify-between flex-wrap ">
+                <div className="movie-cards2 max-w-[1300px] w-full h-auto p-4 flex flex-row justify-between flex-wrap max-p640:gap-5 ">
 
                     <div className="moviecard4 max-w-[300px] w-full h-auto p-1 bg-white mx-auto ">
 
                         <div className="overplay relative">
-
-                            <img className='absolute max-w-[100px] w-full h-auto top-[-20px] left-[-25px] ' src={r2} />
-
                             <video controls className='max-w-[300px] w-full h-auto rounded-2xl shadow-lg mx-auto ' src={v4}></video>
-
                         </div>
 
                     </div>
 
                     <div className="moviecard5 max-w-[300px] w-full h-auto p-1 bg-white mx-auto">
                         <div className="overplay relative">
-                            <img className='absolute max-w-[100px] w-full h-auto top-[-20px] left-[-25px] ' src={r2} />
                             <video controls className='max-w-[300px] w-full h-auto rounded-2xl shadow-lg mx-auto ' src={v5}></video>
                         </div>
                     </div>
 
                     <div className="moviecard6 max-w-[300px] w-full h-auto p-1 bg-white mx-auto">
                         <div className="overplay relative">
-                            <img className='absolute max-w-[100px] w-full h-auto top-[-20px] left-[-25px] ' src={r2} />
                             <video controls className='max-w-[300px] w-full h-auto rounded-2xl shadow-lg mx-auto ' src={v6}></video>
                         </div>
                     </div>

@@ -23,19 +23,19 @@ const Countries = () => {
     const languages = localStorage.getItem('i18nextLng');
 
     return (
-        <div id='countries' className="countries m-auto max-w-[1920px] w-full h-auto border-2 border-fuchsia-600 pt-[100px] ">
+        <div id='countries' className="countries m-auto max-w-[1920px] w-full h-auto pt-[100px] ">
 
-            <div className='coutries-con m-auto max-w-[1300px] w-full h-auto px-4 '>
+            <div className='coutries-con m-auto max-w-[1300px] w-full h-auto px-4'>
 
                 <div data-aos="fade-right">
 
-                    <h3 className='text-[50px] font-sans font-bold text-black  '>{t('Countries')}</h3>
+                    <h3 className='text-[50px] font-sans font-bold text-black max-p992:text-center max-p992:text-[30px] '>{t('Countries')}</h3>
 
-                    <span class="animate-linear-1 mt-[5px] block w-[48px] h-[5px] bg-[#f00]"></span>
+                    <span class="animate-linear-1 mt-[5px] block w-[48px] h-[5px] bg-[#f00] max-p992:m-auto"></span>
 
                 </div>
 
-                <div className='countries-places max-w-[1300px] w-full h-auto border-2 border-fuchsia-800 mt-10 flex flex-wrap gap-[30px] justify-center justify-between max-middle:justify-evenly '>
+                <div className='countries-places max-w-[1300px] w-full h-auto mt-10 flex flex-wrap gap-[30px] justify-center justify-between max-middle:justify-evenly max-p1160:justify-center '>
 
                     <div data-aos="zoom-in" className="countries-card1 max-w-[350px] w-full h-auto flex flex-col ">
                         <img className='object-cover h-full rounded-t-3xl ' src={o1} />
