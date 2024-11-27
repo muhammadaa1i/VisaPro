@@ -63,11 +63,11 @@ const Contact = () => {
 
                 <div className="contact-left text-left text-white ">
 
-                    <div className='aos-init aos-animate' data-aos='fade-right'>
+                    <div className='aos-init aos-animate' data-aos='fade-ce'>
 
                         <h3 className='font-bold font-sans text-[50px] '>{t('Contact')}</h3>
 
-                        <span class="animate-linear-1 mt-[5px] block w-[48px] h-[5px] bg-[#f00]"></span>
+                        <span className="animate-linear-1 mt-[5px] block w-[48px] h-[5px] bg-[#f00]"></span>
 
                         <h5 className='text-[18px] font-sans mt-[35px] '>{t('For contact:')}</h5>
 
@@ -75,61 +75,61 @@ const Contact = () => {
 
                     <ul className='mt-[15px]'>
 
-                        <li class="txt-n leading-tight aos-init aos-animate" data-aos="fade-right">
+                        <li className="txt-n leading-tight aos-init aos-animate" data-aos="zoom-in">
                             <a href="tel:997126666">+998 99 712 66 66</a>
                         </li>
 
-                        <li class="txt-n leading-tight aos-init aos-animate" data-aos="fade-right">
+                        <li className="txt-n leading-tight aos-init aos-animate" data-aos="zoom-in">
                             <a href="tel:974839999">+998 97 483 99 99</a>
                         </li>
 
                     </ul>
 
-                    <p class="font-bold mt-[35px] text-[18px] aos-init aos-animate" data-aos="fade-right">{t('Social media')}</p>
+                    <p className="font-bold mt-[35px] text-[18px] aos-init aos-animate" data-aos="zoom-in">{t('Social media')}</p>
 
-                    <div class="browsers flex flex-col gap-4 mt-[15px] justify-center aos-init aos-animate" data-aos="fade-right">
+                    <div className="browsers flex flex-col gap-4 mt-[15px] justify-center aos-init aos-animate" data-aos="fade-right">
 
-                        <div class="max-w-[280px] w-full h-auto flex flex-row items-center gap-2">
+                        <div className="max-w-[280px] w-full h-auto flex flex-row items-center gap-2">
 
-                            <a class="rounded-lg flex gap-2 items-center transition-all" href="https://www.instagram.com/easy.visa.uzb/?igsh=aXI4bG9mMm5sczZ3&utm_source=qr">
+                            <a className="rounded-lg flex gap-2 items-center transition-all" href="https://www.instagram.com/easy.visa.uzb/?igsh=aXI4bG9mMm5sczZ3&utm_source=qr">
                                 <i className="fa-brands fa-instagram text-red-800 text-[30px]"></i>
-                                <p class="hover:text-[#D5192F]">
+                                <p className="hover:text-[#D5192F]">
                                     easy.visa.uzb
                                 </p>
                             </a>
 
                         </div>
 
-                        <div class="max-w-[280px] w-full h-auto flex flex-row items-center gap-2">
+                        <div className="max-w-[280px] w-full h-auto flex flex-row items-center gap-2">
 
-                            <a class="rounded-lg flex gap-2 items-center transition-all" href="https://www.instagram.com/easy.visa.uzb/?igsh=aXI4bG9mMm5sczZ3&utm_source=qr">
+                            <a className="rounded-lg flex gap-2 items-center transition-all" href="https://www.instagram.com/easy.visa.uzb/?igsh=aXI4bG9mMm5sczZ3&utm_source=qr">
                                 <i className="fa-brands fa-telegram text-red-800 text-[30px]"></i>
                             </a>
 
                             <div className='flex flex-col'>
-                                <a class="hover:text-[#D5192F] rounded-lg block transition-all" href="https://t.me/Ataev_Bakhodir90">
+                                <a className="hover:text-[#D5192F] rounded-lg block transition-all" href="https://t.me/Ataev_Bakhodir90">
                                     t.me/Ataev_Bakhodir90
                                 </a>
 
-                                <a class="hover:text-[#D5192F] rounded-lg block transition-all" href="https://t.me/sevaraataeva1986">
+                                <a className="hover:text-[#D5192F] rounded-lg block transition-all" href="https://t.me/sevaraataeva1986">
                                     t.me/sevaraataeva1986
                                 </a>
                             </div>
 
                         </div>
 
-                        <div class="max-w-[280px] w-full h-auto flex flex-row items-center gap-2">
+                        <div className="max-w-[280px] w-full h-auto flex flex-row items-center gap-2">
 
-                            <a class="rounded-lg flex gap-2 items-center transition-all" href="https://t.me/easyvizatourconsulting">
+                            <a className="rounded-lg flex gap-2 items-center transition-all" href="https://t.me/easyvizatourconsulting">
                                 <i className="fa-solid fa-circle-plus text-red-800 text-[30px]"></i>
-                                <p class="hover:text-[#D5192F]">
+                                <p className="hover:text-[#D5192F]">
                                     Telegram
                                 </p>
                             </a>
 
                         </div>
 
-                        <div data-aos="fade-right" class="max-w-[280px] w-full h-auto flex flex-row items-center gap-2">
+                        <div data-aos="zoom-in" className="max-w-[280px] w-full h-auto flex flex-row items-center gap-2">
 
                             <i className="fa-solid fa-location-dot text-[40px] text-red-800 "></i>
 
@@ -141,7 +141,7 @@ const Contact = () => {
 
                 </div>
 
-                <div class="contact-map max-w-[450px] w-full h-auto  aos-init aos-animate max-middle:max-w-[350px] max-middle:max-h-[500px] " data-aos="zoom-in">
+                <div className="contact-map max-w-[450px] w-full h-auto  aos-init aos-animate max-middle:max-w-[350px] max-middle:max-h-[500px] " data-aos="zoom-in">
 
                     <img className='max-w-[450px] w-full max-h-[550px] h-full rounded-2xl ' src={mus} />
 
@@ -149,19 +149,18 @@ const Contact = () => {
 
                 <form onSubmit={Sendmessage} id="myForm" className="contact-right max-w-[350px] w-full h-auto flex flex-col text-left gap-6 pb-10 ">
 
-                    <h3 class="text-[40px] font-bold text-white aos-init aos-animate" data-aos="fade-left">{t('Submit a request')}</h3>
+                    <h3 className="text-[40px] font-bold text-white aos-init aos-animate" data-aos="zoom-in">{t('Submit a request')}</h3>
 
-                    <input id='name' required class="py-[10px] bg-white pl-[20px] text-[16px] outline-none text-[#222221] aos-init aos-animate" placeholder={t('Name')} type="text" data-aos="fade-left"></input>
+                    <input id='name' required class="py-[10px] bg-white pl-[20px] text-[16px] outline-none text-[#222221] aos-init aos-animate" placeholder={t('Name')} type="text" data-aos="zoom-in"></input>
 
-                    <input id="surname" required class="py-[10px] bg-white pl-[20px] text-[16px] outline-none text-[#222221] aos-init aos-animate" placeholder={t('Surname')} type="text" data-aos="fade-left"></input>
+                    <input id="surname" required class="py-[10px] bg-white pl-[20px] text-[16px] outline-none text-[#222221] aos-init aos-animate" placeholder={t('Surname')} type="text" data-aos="zoom-in"></input>
 
                     <input id="telephone" pattern="[0-9]*"
-                    onInput={handlePhoneInput} required class="py-[10px] bg-white pl-[20px] text-[16px] outline-none text-[#222221] aos-init aos-animate" placeholder={t('telephone')} type="tel" data-aos="fade-left"></input>
+                    onInput={handlePhoneInput} required class="py-[10px] bg-white pl-[20px] text-[16px] outline-none text-[#222221] aos-init aos-animate" placeholder={t('telephone')} type="tel" data-aos="zoom-in"></input>
 
-                    <textarea id="comment" required class="user-text h-[175px] text-[#222221] bg-white py-[10px] pl-[20px] outline-none aos-init aos-animate" name="comment" cols="30" rows="10" placeholder={t("Comments")} data-aos="fade-left"></textarea>
+                    <textarea id="comment" required class="user-text h-[175px] text-[#222221] bg-white py-[10px] pl-[20px] outline-none aos-init aos-animate" name="comment" cols="30" rows="10" placeholder={t("Comments")} data-aos="zoom-in"></textarea>
 
                     <button type="submit" class="bg-[#D5192F] rounded-lg py-[10px] text-white font-bold transition-all hover:bg-white hover:text-[#D5192F] mt-2">{t('Submit a request')}</button>
-                    <ToastContainer />
 
                 </form>
 

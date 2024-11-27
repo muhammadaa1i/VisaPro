@@ -40,46 +40,46 @@ export default function App() {
             spaceBetween: 10,
           }
         }}
-        className="mySwiper2 max-w-[1300px] w-full h-auto m-auto flex flex-row gap-[50px]">
+        className="mySwiper2 max-w-[1300px] w-full h-auto m-auto flex flex-row gap-[50px] ">
 
         <SwiperSlide>
-          <div className="card w-[250px] h-[300px] flex justify-center items-center pb-20 pt-4 ml-[10px]">
+          <div className="card w-[250px] h-[300px] flex justify-center items-center pb-20 pt-4 ml-[10px] max-p470:w-[200px] max-p470:h-[250px] max-p470:mt-8 ">
             <img className="card-img min-h-[220px] h-full rounded-lg" src={s1} />
           </div>
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="card w-[250px] h-[300px] flex justify-center items-center pb-20 pt-4">
+          <div className="card w-[250px] h-[300px] flex justify-center items-center pb-20 pt-4 max-p470:w-[200px] max-p470:h-[250px] max-p470:mt-8">
             <img className="card-img w-full min-h-[220px] h-full rounded-lg" src={s2} />
           </div>
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="card w-[250px] h-[300px] flex justify-center items-center pb-20 pt-4">
+          <div className="card w-[250px] h-[300px] flex justify-center items-center pb-20 pt-4 max-p470:w-[200px] max-p470:h-[250px] max-p470:mt-8">
             <img className="card-img min-h-[220px] h-full rounded-lg" src={s3} />
           </div>
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="card w-[250px] h-[300px] flex justify-center items-center pb-20 pt-4">
+          <div className="card w-[250px] h-[300px] flex justify-center items-center pb-20 pt-4 max-p470:w-[200px] max-p470:h-[250px] max-p470:mt-8">
             <img className="card-img min-h-[220px] h-full rounded-lg" src={s4} />
           </div>
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="card w-[250px] h-[300px] flex justify-center items-center pb-20 pt-4">
+          <div className="card w-[250px] h-[300px] flex justify-center items-center pb-20 pt-4 max-p470:w-[200px] max-p470:h-[250px] max-p470:mt-8">
             <img className="card-img min-h-[220px] h-full rounded-lg" src={s5} />
           </div>
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="card w-[250px] h-[300px] flex justify-center items-center pb-20 pt-4">
+          <div className="card w-[250px] h-[300px] flex justify-center items-center pb-20 pt-4 max-p470:w-[200px] max-p470:h-[250px] max-p470:mt-8">
             <img className="card-img min-h-[220px] h-full rounded-lg" src={s6} />
           </div>
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="card w-[250px] h-[300px] flex justify-center items-center pb-20 pt-4">
+          <div className="card w-[250px] h-[300px] flex justify-center items-center pb-20 pt-4 max-p470:w-[200px] max-p470:h-[250px] max-p470:mt-8">
             <img className="card-img min-h-[220px] h-full rounded-lg" src={s7} />
           </div>
         </SwiperSlide>

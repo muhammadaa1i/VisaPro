@@ -19,6 +19,36 @@ const Accordion = () => {
 
   const isDarkMode = useIsDarkMode();
 
+  const Tab = React.forwardRef((props, ref) => {
+    return (
+      <BaseTab
+        ref={ref}
+        {...props}
+        slotProps={{
+          ...props.slotProps,
+          root: (ownerState) => {
+            const resolvedSlotProps = resolveSlotProps(
+              props.slotProps?.root,
+              ownerState,
+            );
+            return {
+              ...resolvedSlotProps,
+              className: clsx(
+                `font-sans w-[200px] leading-none text-center text-[15px] px-4 py-3 m-1 border-none rounded-md cursor-pointer transition-colors duration-300 ease-in-out
+                ${ownerState.selected
+                  ? 'bg-[#f00] text-white'
+                  : 'bg-[#292D31] text-white hover:bg-[#f00]'
+                }`,
+                resolvedSlotProps?.className,
+              )
+            }
+          }
+        }}
+      />
+    );
+  });
+
+
   return (
     <div className={isDarkMode ? 'dark' : ''}>
 
@@ -26,7 +56,7 @@ const Accordion = () => {
 
         <TabsList className="flex flex-row flex-wrap">
 
-          <Tab data-aos="zoom-in" className="btn-u w-[200px] leading-none text-center text-[15px] px-4 py-3 ml-6 border-none rounded-md cursor-pointer bg-[#292D31] text-white transition-colors duration-300 ease-in-out hover:bg-[#f00] active aos-init aos-animate" value={0}>{t('Visa Consultations')}</Tab>
+          <Tab data-aos="zoom-in" className="btn-u w-[200px] leading-none text-center text-[15px] px-4 py-3 ml-6 border-none rounded-md cursor-pointer bg-[#292D31] text-white transition-colors duration-300 ease-in-out hover:bg-[#f00] active aos-init aos-animate max-p1320:ml-28 max-p1220:ml-10 max-p1160:ml-24 max-p992:ml-10" value={0}>{t('Visa Consultations')}</Tab>
 
           <Tab data-aos="zoom-in" className="btn-u w-[200px] leading-none text-center text-[15px] px-4 py-3 m-2 border-none rounded-md cursor-pointer bg-[#292D31] text-white transition-colors duration-300 ease-in-out hover:bg-[#f00] active aos-init aos-animate" value={1}>{t('Tourist Visas')}</Tab>
 
@@ -34,12 +64,12 @@ const Accordion = () => {
 
           <Tab data-aos="zoom-in" className="btn-u w-[200px] leading-none text-center text-[15px] px-4 py-3 m-1 border-none rounded-md cursor-pointer bg-[#292D31] text-white transition-colors duration-300 ease-in-out hover:bg-[#f00] active aos-init aos-animate" value={3}>{t('Document Preparation')}</Tab>
 
-          <Tab data-aos="zoom-in" className="btn-u w-[200px] leading-none text-center text-[15px] px-4 py-3 m-1 border-none rounded-md cursor-pointer bg-[#292D31] text-white transition-colors duration-300 ease-in-out hover:bg-[#f00] active aos-init aos-animate" value={4}>{t('Tour Packages')}</Tab>
+          <Tab data-aos="zoom-in" className="btn-u w-[200px] leading-none text-center text-[15px] px-4 py-3 m-1 border-none rounded-md cursor-pointer bg-[#292D31] text-white transition-colors duration-300 ease-in-out hover:bg-[#f00] active aos-init aos-animate max-p1160:ml-[300px] max-p992:ml-[150px] max" value={4}>{t('Tour Packages')}</Tab>
 
-          <Tab data-aos="zoom-in" className="btn-u w-[200px] leading-none text-center text-[15px] px-4 py-3 m-1 border-none rounded-md cursor-pointer bg-[#292D31] text-white transition-colors duration-300 ease-in-out hover:bg-[#f00] active aos-init aos-animate" value={5}>{t("Insurance")}</Tab>
+          <Tab data-aos="zoom-in" className="btn-u w-[200px] leading-none text-center text-[15px] px-4 py-3 m-1 border-none rounded-md cursor-pointer bg-[#292D31] text-white transition-colors duration-300 ease-in-out hover:bg-[#f00] active aos-init aos-animate max-p1320:ml-[500px] max-p1160:ml-24" value={5}>{t("Insurance")}</Tab>
 
         </TabsList>
-        
+
         <TabPanel className="ml-[30px] text-black text-[18px] mt-[25px] font-mono font-bold ">{t("EASY VISA CONSULTING specialists provide detailed consultations on visa applications for countries such as Schengen, Canada, the USA, the United Kingdom, Japan, and Korea. We explain all the nuances of document submission and help you prepare for the process.")}</TabPanel>
 
         <TabPanel className="ml-[30px] text-black text-[18px] mt-[25px] font-mono font-bold ">{t("We assist in obtaining tourist visas for comfortable travel to popular countries, including Europe, North America, and Asia. Our experts provide full support at every stage.")}</TabPanel>
