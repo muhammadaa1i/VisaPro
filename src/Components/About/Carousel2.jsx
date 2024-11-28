@@ -40,7 +40,7 @@ export default function App() {
             spaceBetween: 10,
           }
         }}
-        className="mySwiper2 max-w-[1300px] w-full h-auto m-auto flex flex-row gap-[50px] ">
+        className="mySwiper2 max-w-[1300px] w-full h-auto m-auto flex flex-row gap-[50px] max-p992:pr-4 ">
 
         <SwiperSlide>
           <div className="card w-[250px] h-[300px] flex justify-center items-center pb-20 pt-4 ml-[10px] max-p470:w-[200px] max-p470:h-[250px] max-p470:mt-8 ">

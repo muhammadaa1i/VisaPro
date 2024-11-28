@@ -58,7 +58,6 @@ export default function Carousel() {
 
     return (
         <div className="relative w-full h-[110vh] overflow-hidden">
-            {/* Slayder */}
             <div
                 className="w-full h-[110vh] flex transition-transform duration-500 ease-in-out"
                 style={{ transform: `translateX(-${currentSlide * 100}%)` }}
@@ -79,7 +78,6 @@ export default function Carousel() {
                 ))}
             </div>
 
-            {/* Pagination Tugmalari */}
             <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
                 {slides.map((_, index) => (
                     <button

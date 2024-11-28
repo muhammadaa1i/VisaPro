@@ -141,10 +141,10 @@ const Contact = () => {
 
                 </div>
 
-                <div className="contact-map max-w-[450px] w-full h-auto  aos-init aos-animate max-middle:max-w-[350px] max-middle:max-h-[500px] " data-aos="zoom-in">
-
-                    <img className='max-w-[450px] w-full max-h-[550px] h-full rounded-2xl ' src={mus} />
-
+                <div className="gmap-frame ax-w-[450px] w-full h-auto  aos-init aos-animate max-middle:max-w-[350px] max-middle:max-h-[500px] " data-aos="zoom-in">
+                    <iframe max-width="500" width="100%" height="550" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=500&amp;height=550&amp;hl=en&amp;q=%D1%83%D0%BB%20%D0%BC%D1%83%D1%81%D1%82%D0%B0%D0%BA%D0%B8%D0%BB%D0%BB%D0%B8%D0%BA,%2059+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                        <a href="https://www.gps.ie/">gps systems</a>
+                    </iframe>
                 </div>
 
                 <form onSubmit={Sendmessage} id="myForm" className="contact-right max-w-[350px] w-full h-auto flex flex-col text-left gap-6 pb-10 ">
@@ -156,7 +156,7 @@ const Contact = () => {
                     <input id="surname" required class="py-[10px] bg-white pl-[20px] text-[16px] outline-none text-[#222221] aos-init aos-animate" placeholder={t('Surname')} type="text" data-aos="zoom-in"></input>
 
                     <input id="telephone" pattern="[0-9]*"
-                    onInput={handlePhoneInput} required class="py-[10px] bg-white pl-[20px] text-[16px] outline-none text-[#222221] aos-init aos-animate" placeholder={t('telephone')} type="tel" data-aos="zoom-in"></input>
+                        onInput={handlePhoneInput} required class="py-[10px] bg-white pl-[20px] text-[16px] outline-none text-[#222221] aos-init aos-animate" placeholder={t('telephone')} type="tel" data-aos="zoom-in"></input>
 
                     <textarea id="comment" required class="user-text h-[175px] text-[#222221] bg-white py-[10px] pl-[20px] outline-none aos-init aos-animate" name="comment" cols="30" rows="10" placeholder={t("Comments")} data-aos="zoom-in"></textarea>
 

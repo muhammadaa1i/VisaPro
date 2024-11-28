@@ -54,19 +54,19 @@ const Accordion = () => {
 
       <Tabs defaultValue={0}>
 
-        <TabsList className="flex flex-row flex-wrap">
+        <TabsList className="tablist flex flex-row flex-wrap max-p470:flex-col max-p470:justify-center max-p470:items-center max-p470:flex-nowrap">
 
-          <Tab data-aos="zoom-in" className="btn-u w-[200px] leading-none text-center text-[15px] px-4 py-3 ml-6 border-none rounded-md cursor-pointer bg-[#292D31] text-white transition-colors duration-300 ease-in-out hover:bg-[#f00] active aos-init aos-animate max-p1320:ml-28 max-p1220:ml-10 max-p1160:ml-24 max-p992:ml-10" value={0}>{t('Visa Consultations')}</Tab>
+          <Tab data-aos="zoom-in" className="btn-u w-[200px] leading-none text-center text-[15px] px-4 py-3 ml-6 border-none rounded-md cursor-pointer bg-[#292D31] text-white transition-colors duration-300 ease-in-out hover:bg-[#f00] active aos-init aos-animate max-p1320:ml-28 max-p1220:ml-10 max-p1160:ml-24 max-p992:ml-10 max-p900:ml-32 max-p830:ml-12 max-p700:ml-4 max-p660:ml-20 max-p560:ml-12 max-p500:ml-6 max-p456:ml-24 max-p360:ml-12 " value={0}>{t('Visa Consultations')}</Tab>
 
-          <Tab data-aos="zoom-in" className="btn-u w-[200px] leading-none text-center text-[15px] px-4 py-3 m-2 border-none rounded-md cursor-pointer bg-[#292D31] text-white transition-colors duration-300 ease-in-out hover:bg-[#f00] active aos-init aos-animate" value={1}>{t('Tourist Visas')}</Tab>
+          <Tab data-aos="zoom-in" className="btn-u w-[200px] leading-none text-center text-[15px] px-4 py-3 m-2 border-none rounded-md cursor-pointer bg-[#292D31] text-white transition-colors duration-300 ease-in-out hover:bg-[#f00] active aos-init aos-animate max-p456:ml-24 max-p360:ml-12" value={1}>{t('Tourist Visas')}</Tab>
 
-          <Tab data-aos="zoom-in" className="btn-u w-[200px] leading-none text-center text-[15px] px-4 py-3 ml-1 border-none rounded-md cursor-pointer bg-[#292D31] text-white transition-colors duration-300 ease-in-out hover:bg-[#f00] active aos-init aos-animate" value={2}>{t('Business Visas')}</Tab>
+          <Tab data-aos="zoom-in" className="btn-u w-[200px] leading-none text-center text-[15px] px-4 py-3 ml-1 border-none rounded-md cursor-pointer bg-[#292D31] text-white transition-colors duration-300 ease-in-out hover:bg-[#f00] active aos-init aos-animate max-p660:ml-20 max-p560:ml-12 max-p500:ml-6 max-p456:ml-24 max-p360:ml-12" value={2}>{t('Business Visas')}</Tab>
 
-          <Tab data-aos="zoom-in" className="btn-u w-[200px] leading-none text-center text-[15px] px-4 py-3 m-1 border-none rounded-md cursor-pointer bg-[#292D31] text-white transition-colors duration-300 ease-in-out hover:bg-[#f00] active aos-init aos-animate" value={3}>{t('Document Preparation')}</Tab>
+          <Tab data-aos="zoom-in" className="btn-u w-[200px] leading-none text-center text-[15px] px-4 py-3 m-1 border-none rounded-md cursor-pointer bg-[#292D31] text-white transition-colors duration-300 ease-in-out hover:bg-[#f00] active aos-init aos-animate max-p900:ml-32 max-p830:ml-12 max-p700:ml-4 max-p456:ml-24 max-p360:ml-12" value={3}>{t('Document Preparation')}</Tab>
 
-          <Tab data-aos="zoom-in" className="btn-u w-[200px] leading-none text-center text-[15px] px-4 py-3 m-1 border-none rounded-md cursor-pointer bg-[#292D31] text-white transition-colors duration-300 ease-in-out hover:bg-[#f00] active aos-init aos-animate max-p1160:ml-[300px] max-p992:ml-[150px] max" value={4}>{t('Tour Packages')}</Tab>
+          <Tab data-aos="zoom-in" className="btn-u w-[200px] leading-none text-center text-[15px] px-4 py-3 m-1 border-none rounded-md cursor-pointer bg-[#292D31] text-white transition-colors duration-300 ease-in-out hover:bg-[#f00] active aos-init aos-animate max-p1160:ml-[300px] max-p992:ml-[150px] max-p900:ml-2 max-p660:ml-20 max-p560:ml-12 max-p500:ml-6 max-p456:ml-24 max-p360:ml-12" value={4}>{t('Tour Packages')}</Tab>
 
-          <Tab data-aos="zoom-in" className="btn-u w-[200px] leading-none text-center text-[15px] px-4 py-3 m-1 border-none rounded-md cursor-pointer bg-[#292D31] text-white transition-colors duration-300 ease-in-out hover:bg-[#f00] active aos-init aos-animate max-p1320:ml-[500px] max-p1160:ml-24" value={5}>{t("Insurance")}</Tab>
+          <Tab data-aos="zoom-in" className="btn-u w-[200px] leading-none text-center text-[15px] px-4 py-3 m-1 border-none rounded-md cursor-pointer bg-[#292D31] text-white transition-colors duration-300 ease-in-out hover:bg-[#f00] active aos-init aos-animate max-p1320:ml-[500px] max-p1160:ml-24 max-p900:ml-2 max-p456:ml-24 max-p360:ml-12" value={5}>{t("Insurance")}</Tab>
 
         </TabsList>
 

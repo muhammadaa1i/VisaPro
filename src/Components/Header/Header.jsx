@@ -74,7 +74,7 @@ const Header = () => {
 
                     <a href class="text-black font-sans text-[16px] z-[99]">+99899 712 66 66</a>
 
-                    <button onClick={() => setBtn(!btn)} className="w-[30px] h-6 z-[80] flex flex-col items-center justify-center">
+                    <button onClick={() => setBtn(!btn)} className="w-[30px] h-6 z-[80] flex flex-col items-center justify-center max-p470:mr-2">
                         {btn ? (<i className="fa-solid fa-xmark text-red-600 text-3xl mr-2"></i>) : (
                             <>
                                 <div className="w-7 h-1 bg-red-600 mb-1"></div>

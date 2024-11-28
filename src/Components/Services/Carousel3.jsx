@@ -21,22 +21,22 @@ export default function Carousel3() {
     <>
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
         <SwiperSlide>
-          <img className='max-w-[1296px] w-full max-h-[950px] h-full ' src={x1} />
+          <img className='max-w-[1296px] w-full h-[90vh] ' src={x1} />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='max-w-[1296px] w-full max-h-[950px] h-full ' src={x2} />
+          <img className='max-w-[1296px] w-full h-[90vh] ' src={x2} />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='max-w-[1296px] w-full max-h-[950px] h-full ' src={x3} />
+          <img className='max-w-[1296px] w-full h-[90vh] ' src={x3} />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='max-w-[1296px] w-full max-h-[950px] h-full ' src={x4} />
+          <img className='max-w-[1296px] w-full h-[90vh] ' src={x4} />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='max-w-[1296px] w-full max-h-[950px] h-full ' src={x5} />
+          <img className='max-w-[1296px] w-full h-[90vh] ' src={x5} />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='max-w-[1296px] w-full max-h-[950px] h-full ' src={x6} />
+          <img className='max-w-[1296px] w-full h-[90vh] ' src={x6} />
         </SwiperSlide>
       </Swiper>
     </>
