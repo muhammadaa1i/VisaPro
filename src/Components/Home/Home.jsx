@@ -8,6 +8,7 @@ import Countries from '../Countries/Countries'
 import Works from '../Works/Works'
 import Services from '../Services/Services'
 import Contact from '../Contact/Contact'
+import { SkeletonTheme } from 'react-loading-skeleton'
 
 const Home = () => {
     const { t, i18n } = useTranslation();
@@ -20,13 +21,15 @@ const Home = () => {
 
     return (
         <div className='site bg-white'>
-            <Header />
-            <Carousel />
-            <About />
-            <Countries />
-            <Works />
-            <Services />
-            <Contact />
+            <SkeletonTheme baseColor="#202020" highlightColor="#444">
+                <Header />
+                <Carousel />
+                <About />
+                <Countries />
+                <Works />
+                <Services />
+                <Contact />
+            </SkeletonTheme>
         </div>
     )
 }

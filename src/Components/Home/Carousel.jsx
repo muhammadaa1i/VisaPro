@@ -1,8 +1,10 @@
-import { useState } from "react";
-import { useTranslation } from "react-i18next";
-import c1 from "../images/c1.jpg";
-import c2 from "../images/c2.jpg";
-import c3 from "../images/c3.jpg";
+import { useState } from "react"
+import { useTranslation } from "react-i18next"
+import c1 from "../images/c1.jpg"
+import c2 from "../images/c2.jpg"
+import c3 from "../images/c3.jpg"
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 
 export default function Carousel() {
     const { t } = useTranslation();
@@ -54,7 +56,7 @@ export default function Carousel() {
 
     const goToSlide = (index) => {
         setCurrentSlide(index);
-    };
+    }
 
     return (
         <div className="relative w-full h-[110vh] overflow-hidden max-p992:max-h-[950px] max-p768:max-h-[750px] max-p470:max-h-[470px]">
@@ -69,7 +71,7 @@ export default function Carousel() {
                     <div
                         key={slide.id}
                         className="w-full h-[110vh] flex-shrink-0 bg-cover bg-center flex justify-center items-center max-p992:max-h-[950px] max-p768:max-h-[750px] max-p470:max-h-[470px] "
-                        style={{ backgroundImage: `url(${slide.image})` }}
+                        style={{ backgroundImage: `url(${slide.image || <Skeleton/>})` }}
                     >
                         <h1 className="text-white  bg-black uppercase bg-opacity-50 px-4 py-2 rounded-2xl text-[14px] p768:text-[22px] max-w-[300px] p768:max-w-[500px] p992:text-[48px] p992:max-w-[900px] w-full font-bold text-center max-p992:my-auto">
                             {slide.text}
