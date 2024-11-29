@@ -19,7 +19,7 @@ const Home = () => {
     }
 
     return (
-        <div className='site bg-white border-4 border-fuchsia-900'>
+        <div className='site bg-white'>
             <Header />
             <Carousel />
             <About />

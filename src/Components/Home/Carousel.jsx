@@ -57,9 +57,9 @@ export default function Carousel() {
     };
 
     return (
-        <div className="relative w-full h-[110vh] overflow-hidden">
+        <div className="relative w-full h-[110vh] overflow-hidden max-p992:max-h-[950px] max-p768:max-h-[750px] max-p470:max-h-[470px]">
             <div
-                className="w-full h-[110vh] flex transition-transform duration-500 ease-in-out"
+                className="w-full h-[110vh] flex transition-transform duration-500 ease-in-out "
                 style={{ transform: `translateX(-${currentSlide * 100}%)` }}
                 onTouchStart={handleTouchStart}
                 onTouchMove={handleTouchMove}
@@ -68,17 +68,17 @@ export default function Carousel() {
                 {slides.map((slide) => (
                     <div
                         key={slide.id}
-                        className="w-full h-full flex-shrink-0 bg-cover bg-center flex justify-center items-center"
+                        className="w-full h-[110vh] flex-shrink-0 bg-cover bg-center flex justify-center items-center max-p992:max-h-[950px] max-p768:max-h-[750px] max-p470:max-h-[470px] "
                         style={{ backgroundImage: `url(${slide.image})` }}
                     >
-                        <h1 className="text-white leading-[1.2] bg-black uppercase bg-opacity-50 px-4 py-2 rounded-2xl text-[14px] p768:text-[22px] max-w-[300px] p768:max-w-[500px] p992:text-[48px] p992:max-w-[900px] w-full font-bold text-center">
+                        <h1 className="text-white  bg-black uppercase bg-opacity-50 px-4 py-2 rounded-2xl text-[14px] p768:text-[22px] max-w-[300px] p768:max-w-[500px] p992:text-[48px] p992:max-w-[900px] w-full font-bold text-center max-p992:my-auto">
                             {slide.text}
                         </h1>
                     </div>
                 ))}
             </div>
 
-            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 ">
                 {slides.map((_, index) => (
                     <button
                         key={index}

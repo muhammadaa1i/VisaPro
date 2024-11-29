@@ -9,9 +9,9 @@ const About = () => {
     return (
         <div id='populars' className='poulars m-auto'>
 
-            <div className="popular-in max-w-[1300px] w-full h-auto m-auto ">
+            <div className="popular-in max-w-[1300px] w-full h-auto m-auto max-p992:mt-10 ">
 
-                <div className='max-w-[210px] ml-[60px] w-full h-auto flex flex-col justify-center items-center max-p992:m-auto'>
+                <div className='max-w-[210px] ml-[60px] w-full h-auto flex flex-col justify-center items-center max-p992:m-auto max-p992:my-auto'>
 
                     <h3 className='text-[30px] p992:text-[50px] mx-auto text-center p992:text-left p992:mx-[0px] font-bold p992:mt-[50px]'>
                         {t('Populars')}
@@ -28,15 +28,15 @@ const About = () => {
 
             </div>
 
-            <div id='about' className="about w-full h-auto mt-[70px] px-[15px]">
+            <div id='about' className="about w-full h-auto mt-[70px] px-[15px] pt-24">
 
                 <div className="about-card m-auto max-w-[1270px] w-full h-auto flex flex-row justify-between gap-[10px] max-p992:flex-col ">
 
-                    <div className='flex flex-col justify-center '>
+                    <div className='flex flex-col justify-center'>
 
                         <span class="block w-[100%] max-p480:w-[60%] mx-auto max-p992:mx-[0px] max-p1200:w-[40%] max-p1200:ml-[0px] h-[2px] bg-[#f00] "></span>
 
-                        <h3 className='text-[30px] p992:text-[50px] mx-auto text-center p992:text-left p992:mx-[0px] font-bold p992:mt-[50px] '>{t('About')}</h3>
+                        <h3 className='text-[30px] p992:text-[50px] mx-auto text-center p992:text-left p992:mx-[0px] font-bold p992:mt-[20px] '>{t('About')}</h3>
 
                         <span class="animate-linear-1 block w-[48px] h-[5px] bg-[#f00] max-p992:mx-auto"></span>
 

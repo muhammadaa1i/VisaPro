@@ -2,6 +2,14 @@
   display: none;
 }
 
+.swiper-button-prev{
+  margin-top: -30px;
+}
+
+.swiper-button-next{
+  margin-top: -30px;
+}
+
 @media (max-width: 900px){
   .mySwiper2{
     margin-left: 50px!important;
@@ -21,30 +29,6 @@
 }
 
 @media (max-width: 790px){
-  .mySwiper2{
-    margin-left: 0px!important;
-  }
-}
-
-@media (max-width: 768px){
-  .mySwiper2{
-    margin-left: 50px!important;
-  }
-}
-
-@media (max-width: 740px){
-  .mySwiper2{
-    margin-left: 30px!important;
-  }
-}
-
-@media (max-width: 690px){
-  .mySwiper2{
-    margin-left: 10px!important;
-  }
-}
-
-@media (max-width: 660px){
   .mySwiper2{
     margin-left: 0px!important;
   }

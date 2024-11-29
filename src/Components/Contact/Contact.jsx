@@ -59,9 +59,9 @@ const Contact = () => {
     return (
         <div id='contact' className="contact max-w-[1920px] w-full h-auto bg-black pt-20 m-auto ">
 
-            <div className="contact-con max-w-[1920px] w-full h-auto m-auto border-2 border-red-800 flex flex-row px-[10px] justify-between flex-wrap ">
+            <div className="contact-con max-w-[1300px] w-full h-auto m-auto flex flex-row px-[10px] justify-between pb-8 max-p1160:flex-wrap max-p640:flex-col ">
 
-                <div className="contact-left text-left text-white ">
+                <div className="contact-left text-left text-white mr-3 max-p1160:ml-40 max-p992:ml-12 max-p830:ml-3 max-p640:m-auto ">
 
                     <div className='aos-init aos-animate' data-aos='fade-ce'>
 
@@ -141,15 +141,9 @@ const Contact = () => {
 
                 </div>
 
-                <div className="gmap-frame ax-w-[450px] w-full h-auto  aos-init aos-animate max-middle:max-w-[350px] max-middle:max-h-[500px] " data-aos="zoom-in">
-                    <iframe max-width="500" width="100%" height="550" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=500&amp;height=550&amp;hl=en&amp;q=%D1%83%D0%BB%20%D0%BC%D1%83%D1%81%D1%82%D0%B0%D0%BA%D0%B8%D0%BB%D0%BB%D0%B8%D0%BA,%2059+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
-                        <a href="https://www.gps.ie/">gps systems</a>
-                    </iframe>
-                </div>
+                <form onSubmit={Sendmessage} id="myForm" className="contact-right max-w-[350px] w-full h-auto flex flex-col text-left gap-6 pb-10 max-p1160:mr-40 max-p992:mr-12 max-p830:mr-3 max-p640:m-auto max-p640:mt-6 max-p456:max-w-[300px] ">
 
-                <form onSubmit={Sendmessage} id="myForm" className="contact-right max-w-[350px] w-full h-auto flex flex-col text-left gap-6 pb-10 ">
-
-                    <h3 className="text-[40px] font-bold text-white aos-init aos-animate" data-aos="zoom-in">{t('Submit a request')}</h3>
+                    <h3 className="text-[40px] font-bold text-white aos-init aos-animate max-p456:text-center " data-aos="zoom-in">{t('Submit a request')}</h3>
 
                     <input id='name' required class="py-[10px] bg-white pl-[20px] text-[16px] outline-none text-[#222221] aos-init aos-animate" placeholder={t('Name')} type="text" data-aos="zoom-in"></input>
 
@@ -163,6 +157,12 @@ const Contact = () => {
                     <button type="submit" class="bg-[#D5192F] rounded-lg py-[10px] text-white font-bold transition-all hover:bg-white hover:text-[#D5192F] mt-2">{t('Submit a request')}</button>
 
                 </form>
+
+                <div className="gmap-frame max-w-[500px] w-full max-h-[550px] h-full aos-init aos-animate max-middle:max-w-[350px] relative max-middle:max-h-[500px] max-p1160:m-auto max-p640:mx-5 max-p456:max-w-[300px] max-p456:m-auto " data-aos="zoom-in">
+                    <iframe className="max-w-[500px] w-full h-[550px]  rounded-xl max-p640:h-[150px] max-p640:max-w-[350px] max-p640:m-auto " frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=500&amp;height=550&amp;hl=en&amp;q=%D1%83%D0%BB%20%D0%BC%D1%83%D1%81%D1%82%D0%B0%D0%BA%D0%B8%D0%BB%D0%BB%D0%B8%D0%BA,%2059+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                        <a href="https://www.gps.ie/">gps systems</a>
+                    </iframe>
+                </div>
 
             </div>
 
