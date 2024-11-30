@@ -163,7 +163,7 @@ const Contact = () => {
                         <a href="https://www.gps.ie/">gps systems</a>
                     </iframe>
                 </div>
-
+        <ToastContainer position="top-center" autoClose={3000}/>
             </div>
 
         </div>
