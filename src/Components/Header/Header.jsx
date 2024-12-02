@@ -72,7 +72,7 @@ const Header = () => {
 
                 <div className="rem flex flex-row max-w-[170px] w-full h-auto justify-between items-center absolute top-5 right-2 max-p470:right-0">
 
-                    <a href class="text-black font-sans text-[16px] z-[99] max-p456:ml-[-5px]">+99899 712 66 66</a>
+                    <a href class="text-black font-sans text-[16px] z-[99] max-p456:ml-[-10px]">+99899 712 66 66</a>
 
                     <button onClick={() => setBtn(!btn)} className="w-[30px] h-6 z-[80] flex flex-col items-center justify-center max-p470:mr-2">
                         {btn ? (<i className="fa-solid fa-xmark text-red-600 text-3xl mr-2"></i>) : (
