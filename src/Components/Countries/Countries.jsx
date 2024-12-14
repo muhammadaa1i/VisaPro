@@ -31,7 +31,7 @@ const Countries = () => {
 
                     <h3 className='text-[50px] font-sans font-bold text-black max-p992:text-center max-p992:text-[30px] '>{t('Countries')}</h3>
 
-                    <span class="animate-linear-1 mt-[5px] block w-[48px] h-[5px] bg-[#f00] max-p992:m-auto"></span>
+                    <span class="animate-linear-1 mt-[5px] block w-[48px] h-[5px] bg-[#f00] max-p992:m-auto max-p456:hidden"></span>
 
                 </div>
 

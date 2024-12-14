@@ -67,7 +67,7 @@ const Contact = () => {
 
                         <h3 className='font-bold font-sans text-[50px] '>{t('Contact')}</h3>
 
-                        <span className="animate-linear-1 mt-[5px] block w-[48px] h-[5px] bg-[#f00]"></span>
+                        <span className="animate-linear-1 mt-[5px] block w-[48px] h-[5px] bg-[#f00] max-p456:hidden"></span>
 
                         <h5 className='text-[18px] font-sans mt-[35px] '>{t('For contact:')}</h5>
 
@@ -163,7 +163,7 @@ const Contact = () => {
                         <a href="https://www.gps.ie/">gps systems</a>
                     </iframe>
                 </div>
-        <ToastContainer position="top-center" autoClose={3000}/>
+                <ToastContainer position="top-center" autoClose={3000} />
             </div>
 
         </div>

@@ -13,30 +13,29 @@ import x4 from '../images/x4.jpg'
 import x5 from '../images/x5.jpg'
 import x6 from '../images/x6.jpg'
 
-// import required modules
 import { Navigation } from 'swiper/modules';
 
 export default function Carousel3() {
   return (
     <>
-      <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+      <Swiper navigation={true} modules={[Navigation]} className="mySwiper mt-4">
         <SwiperSlide>
-          <img className='max-w-[1296px] w-full h-[90vh] ' src={x1} />
+          <img src={x1} />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='max-w-[1296px] w-full h-[90vh] ' src={x2} />
+          <img src={x2} />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='max-w-[1296px] w-full h-[90vh] ' src={x3} />
+          <img src={x3} />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='max-w-[1296px] w-full h-[90vh] ' src={x4} />
+          <img src={x4} />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='max-w-[1296px] w-full h-[90vh] ' src={x5} />
+          <img src={x5} />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='max-w-[1296px] w-full h-[90vh] ' src={x6} />
+          <img src={x6} />
         </SwiperSlide>
       </Swiper>
     </>

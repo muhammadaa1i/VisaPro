@@ -16,7 +16,7 @@ const About = () => {
                     <h3 className='text-[30px] p992:text-[50px] mx-auto text-center p992:text-left p992:mx-[0px] font-bold p992:mt-[50px]'>
                         {t('Populars')}
 
-                        <div class="animate-linear-1 block w-[48px] h-[5px] bg-[#f00] max-p992:m-auto "></div>
+                        <div class="animate-linear-1 block w-[48px] h-[5px] bg-[#f00] max-p992:m-auto max-p456:hidden "></div>
 
                     </h3>
 
@@ -34,11 +34,11 @@ const About = () => {
 
                     <div className='flex flex-col justify-center'>
 
-                        <span class="block w-[100%] max-p480:w-[60%] mx-auto max-p992:mx-[0px] max-p1200:w-[40%] max-p1200:ml-[0px] h-[2px] bg-[#f00] "></span>
+                        <span class="block w-[100%] max-p480:w-[60%] mx-auto max-p992:mx-[0px] max-p1200:w-[40%] max-p1200:ml-[0px] h-[2px] bg-[#f00]  "></span>
 
                         <h3 className='text-[30px] p992:text-[50px] mx-auto text-center p992:text-left p992:mx-[0px] font-bold p992:mt-[20px] '>{t('About')}</h3>
 
-                        <span class="animate-linear-1 block w-[48px] h-[5px] bg-[#f00] max-p992:mx-auto"></span>
+                        <span class="animate-linear-1 block w-[48px] h-[5px] bg-[#f00] max-p992:mx-auto max-p456:hidden"></span>
 
                         <h5 className='max-w-[570px] w-full text-[18px] font-medium text-black mt-[30px] font-sans max-p992:m-auto max-p992:max-w-[650px] '>
                             {t('EASY VISA CONSULTING is a rapidly growing company specializing in visa support for travelers. We ensure that your trips are comfortable and worry-free.')}

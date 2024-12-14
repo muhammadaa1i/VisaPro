@@ -21,7 +21,7 @@ const Works = () => {
 
                     <h3 className='text-[50px] font-sans text-black font-bold max-p992:text-[30px] max-p992:text-center '>{t('Excursion')}</h3>
 
-                    <span class="animate-linear-1 mt-[5px] block w-[48px] h-[5px] bg-[#f00] max-p992:m-auto"></span>
+                    <span class="animate-linear-1 mt-[5px] block w-[48px] h-[5px] bg-[#f00] max-p992:m-auto max-p456:hidden"></span>
 
                 </div>
 
@@ -51,7 +51,7 @@ const Works = () => {
 
                     <h3 className='text-[50px] font-sans text-black font-bold mt-[50px] max-p992:text-center max-p992:text-[30px] '>{t('Client Reviews')}</h3>
 
-                    <span class="animate-linear-1 mt-[5px] block w-[48px] h-[5px] bg-[#f00] max-p992:m-auto "></span>
+                    <span class="animate-linear-1 mt-[5px] block w-[48px] h-[5px] bg-[#f00] max-p992:m-auto max-p456:hidden"></span>
 
                 </div>
 
@@ -89,7 +89,7 @@ const Works = () => {
 
                         <h3 className='text-[30px] p992:text-[50px] mx-auto text-center p992:mx-[0px] font-bold p992:mt-[50px] text-white '>{t('Priorities in Tourism and Visas')}</h3>
 
-                        <span class="animate-linear-1 m-auto mt-[5px] block w-[48px] h-[5px] bg-[#f00]"></span>
+                        <span class="animate-linear-1 m-auto mt-[5px] block w-[48px] h-[5px] bg-[#f00] max-p456:hidden"></span>
 
                     </div>
 
@@ -133,7 +133,7 @@ const Works = () => {
 
                             <h1 className='text-[30px] p992:text-[50px] mx-auto text-center p992:mx-[0px] font-bold p992:mt-[50px] text-white'>{t('We in Numbers')}</h1>
 
-                            <span class="animate-linear-1 m-auto mt-[5px] block w-[48px] h-[5px] bg-[#fff]"></span>
+                            <span class="animate-linear-1 m-auto mt-[5px] block w-[48px] h-[5px] bg-[#fff] max-p992:hidden"></span>
 
                         </div>
 

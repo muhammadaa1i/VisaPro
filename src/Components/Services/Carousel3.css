@@ -6,7 +6,6 @@ body {
   position: relative;
   height: 100%;
 }
-
 body {
   background: #eee;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -15,12 +14,10 @@ body {
   margin: 0;
   padding: 0;
 }
-
 .swiper {
-  width: 100%;
+  width: 90%;
   height: 100%;
 }
-
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -29,14 +26,12 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .swiper-slide img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 90%;
   object-fit: cover;
 }
-
 .swiper-wrapper{
   width: 90vw;
 }

@@ -16,7 +16,7 @@ const Services = () => {
 
                     <h3 className='text-[50px] text-black font-bold font-sans max-p992:text-[30px] max-p992:text-center '>{t('Services')}</h3>
 
-                    <span class="animate-linear-1 mt-[5px] block w-[48px] h-[5px] bg-[#f00] max-p992:m-auto"></span>
+                    <span class="animate-linear-1 mt-[5px] block w-[48px] h-[5px] bg-[#f00] max-p992:m-auto max-p456:hidden"></span>
 
                 </div>
 
@@ -34,7 +34,7 @@ const Services = () => {
 
                         <h3 className='text-[50px] text-white font-bold font-sans max-p992:text-[30px] max-p992:text-center '>{t('Travels')}</h3>
 
-                        <span class="animate-linear-1 mt-[5px] block w-[48px] h-[5px] bg-[#f00] mb-[25px] max-p992:m-auto"></span>
+                        <span class="animate-linear-1 mt-[5px] block w-[48px] h-[5px] bg-[#f00] mb-[25px] max-p992:m-auto max-p456:hidden"></span>
 
                     </div>
 
