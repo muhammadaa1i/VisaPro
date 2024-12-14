@@ -21,15 +21,13 @@ const Home = () => {
 
     return (
         <div className='site bg-white'>
-            <SkeletonTheme baseColor="#202020" highlightColor="#444">
-                <Header />
-                <Carousel />
-                <About />
-                <Countries />
-                <Works />
-                <Services />
-                <Contact />
-            </SkeletonTheme>
+            <Header />
+            <Carousel />
+            <About />
+            <Countries />
+            <Works />
+            <Services />
+            <Contact />
         </div>
     )
 }
