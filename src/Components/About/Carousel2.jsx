@@ -8,7 +8,6 @@ import s6 from '../images/s6.jpg'
 import s7 from '../images/s7.jpg'
 import Slider from "react-slick"
 import { useTranslation } from 'react-i18next'
-import { breakpoints } from '@mui/system'
 
 const settings = {
   dots: false,
@@ -67,7 +66,7 @@ export default function Carousel2() {
       <Slider
         {...settings}>
         {images.map((image, index) => (
-          <div key={index} className='slide mt-6 ml-8 text-center max-p830:max-w-[750px] max-p470:max-w-[400px]'>
+          <div key={index} className='slide mt-6 ml-8 text-center  max-p830:max-w-[750px] max-p470:max-w-[400px]'>
             <img src={image} alt={`Slide ${index + 1}`} className='w-[350px] h-[300px] rounded-lg mx-auto mx-2 max-p830:mx-auto max-p470:mx-[-30px] max-p456:max-w-[300px] max-p456:max-h-[250px] max-p456:mx-[0px] max-p360:max-w-[250px] max-p360:mx-[30px]' />
             <h2 className='w-[350px] text-3xl font-semibold mx-auto mx-2 max-p830:mx-auto max-p470:mx-[-30px]'>{text[index]}</h2>
           </div>
