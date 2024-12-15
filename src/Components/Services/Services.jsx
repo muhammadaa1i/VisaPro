@@ -21,12 +21,12 @@ const Services = () => {
                 </div>
 
                 <div className="btn-con flex flex-row justify-between mt-[15px] ">
-                    <Accordion/>
+                    <Accordion />
                 </div>
 
             </div>
 
-            <div className="work mt-20 max-w-[1920px] w-full h-auto bg-green-950 ">
+            <div className="work mt-20 max-w-[1920px] w-full h-auto bg-green-950">
 
                 <div className="work-swp max-w-[1300px] w-full h-auto border-white m-auto ">
 

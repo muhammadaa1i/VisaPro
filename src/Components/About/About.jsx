@@ -9,7 +9,7 @@ const About = () => {
     return (
         <div id='populars' className='poulars m-auto'>
 
-            <div className="popular-in max-w-[1300px] w-full h-auto m-auto max-p992:mt-10 ">
+            <div className="popular-in max-w-[1300px] w-full h-auto m-auto max-p992:mt-10 pb-8">
 
                 <div className='max-w-[210px] ml-[60px] w-full h-auto flex flex-col justify-center items-center max-p992:m-auto max-p992:my-auto'>
 
@@ -22,7 +22,7 @@ const About = () => {
 
                 </div>
 
-                <div className='carousel2 container m-auto'>
+                <div className='carousel2 container m-auto '>
                     <Carousel2 />
                 </div>
 

@@ -39,3 +39,12 @@
     margin-left: 0px!important;
   }
 }
+
+@media screen and (max-width:460px) {
+  .swiper-button-prev{
+    display: none;
+  }
+  .swiper-button-next{
+    display: none;
+  }
+}
