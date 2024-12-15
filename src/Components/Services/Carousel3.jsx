@@ -18,7 +18,7 @@ import { Navigation } from 'swiper/modules';
 export default function Carousel3() {
   return (
     <>
-      <Swiper navigation={true} modules={[Navigation]} className="mySwiper mt-4">
+      <Swiper navigation={true} modules={[Navigation]} className="mySwiper mt-4 ">
         <SwiperSlide>
           <img src={x1} />
         </SwiperSlide>

@@ -15,7 +15,7 @@ import s7 from '../images/s7.jpg';
 
 export default function App() {
   return (
-    <>
+    <div className="flex justify-center items-center w-full h-auto mt-4">
       <Swiper
         slidesPerView={3}
         spaceBetween={30}
@@ -27,9 +27,9 @@ export default function App() {
             slidesPerView: 3,
             spaceBetween: 30,
           },
-          768: {
+          900: {
             slidesPerView: 2,
-            spaceBetween: 15,
+            spaceBetween: 20,
           },
           640: {
             slidesPerView: 1,
@@ -37,14 +37,14 @@ export default function App() {
           },
           0: {
             slidesPerView: 1,
-            spaceBetween: 10,
+            spaceBetween: 0,
           },
         }}
-        className="mySwiper2 max-w-[1300px] w-full h-auto m-auto flex flex-row mt-2 gap-5 max-p470:pr-4"
+        className="mySwiper2 max-w-[1300px] w-full h-auto gap-5 "
       >
         {[s1, s2, s3, s4, s5, s6, s7].map((src, index) => (
           <SwiperSlide key={index}>
-            <div className="card w-[250px] h-[300px] flex justify-center items-center pb-10 pt-4 max-p470:w-[200px] max-p470:h-[250px]">
+            <div className="card w-[250px] h-[300px] flex justify-center items-center pb-10 pt-4 max-p470:w-[200px] max-p470:h-[250px] ">
               <img
                 className="card-img w-full h-auto rounded-lg"
                 src={src}
@@ -54,6 +54,6 @@ export default function App() {
           </SwiperSlide>
         ))}
       </Swiper>
-    </>
+    </div>
   );
 }

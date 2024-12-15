@@ -22,7 +22,7 @@ const About = () => {
 
                 </div>
 
-                <div className='carousel2 container max-p640:m-auto'>
+                <div className='carousel2 container m-auto'>
                     <Carousel2 />
                 </div>
 

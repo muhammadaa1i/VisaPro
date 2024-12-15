@@ -1,3 +1,6 @@
+.swiper{
+  width: 100%;
+}
 .swiper-pagination {
   display: none;
 }
@@ -13,6 +16,9 @@
 @media (max-width: 900px){
   .mySwiper2{
     margin-left: 50px!important;
+  }
+  .swiper{
+    margin-right: 0px!important;
   }
 }
 
