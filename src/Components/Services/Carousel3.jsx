@@ -53,6 +53,7 @@ export default function Carousel3() {
         <div key={index} className="slide max-p1320:px-20 max-p1160:px-4 max-p992:mt-3">
           <div className="flex justify-center items-center h-[800px] max-p1320:mx-auto max-p1320:w-[1000px] max-p1320:h-[700px] max-p1024:w-[800px] max-p1024:h-[600px] max-p830:w-[600px] max-p830:h-[400px] max-p640:w-[500px] max-p560:w-[400px] max-p560:h-[300px] max-p456:max-w-[350px] max-p456:max-h-[250px] max-p456:px-3 max-p360:px-0 max-p360:max-w-[250px] max-p360:max-h-[200px]">
             <img
+              loading="lazy"
               src={image}
               alt={`Slide ${index + 1}`}
               className="m-auto w-full h-[130%] rounded-lg"

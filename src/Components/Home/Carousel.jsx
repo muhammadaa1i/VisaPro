@@ -68,7 +68,7 @@ export default function Carousel() {
                 onTouchEnd={handleTouchEnd}
             >
                 {slides.map((slide) => (
-                    <div
+                    <div 
                         key={slide.id}
                         className="w-full h-[110vh] flex-shrink-0 bg-cover bg-center flex justify-center items-center max-p992:max-h-[950px] max-p768:max-h-[750px] max-p470:max-h-[470px] "
                         style={{ backgroundImage: `url(${slide.image})` }}
@@ -84,11 +84,10 @@ export default function Carousel() {
                 {slides.map((_, index) => (
                     <button
                         key={index}
-                        className={`h-3 w-3 rounded-full ${
-                            currentSlide === index
+                        className={`h-3 w-3 rounded-full ${currentSlide === index
                                 ? "bg-green-500"
                                 : "bg-gray-400"
-                        }`}
+                            }`}
                         onClick={() => goToSlide(index)}
                     ></button>
                 ))}
