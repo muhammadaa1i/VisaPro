@@ -1,10 +1,10 @@
 import Carousel2 from './Carousel2'
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next"
 import './About.css'
 
 const About = () => {
-    const { t, i18n } = useTranslation();
-    const languages = localStorage.getItem('i18nextLng');
+    const { t, i18n } = useTranslation()
+    const languages = localStorage.getItem('i18nextLng')
 
     return (
         <div id='populars' className='poulars m-auto'>
@@ -59,8 +59,6 @@ const About = () => {
                 </div>
 
             </div>
-
-
 
         </div>
     )
