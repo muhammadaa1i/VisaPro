@@ -66,12 +66,12 @@ export default function Carousel2() {
       <Slider
         {...settings}>
         {images.map((image, index) => (
-          <div key={index} className='slide mt-6 ml-4 text-center  max-p830:max-w-[750px] max-p470:max-w-[400px]'>
+          <div key={index} className='slide mt-6 ml-4 text-center  max-p830:max-w-[750px] max-p470:max-w-[400px] outline-none'>
             <img
               loading='lazy'
               src={image}
               alt={`Slide ${index + 1}`}
-              className='w-[350px] h-[300px] rounded-lg mx-auto mx-2 max-p830:mx-auto max-p470:mx-[-30px] max-p456:max-w-[300px] max-p456:max-h-[250px] max-p456:mx-[0px] max-p360:max-w-[250px] max-p360:mx-[30px]' />
+              className='w-[350px] h-[300px] rounded-lg mx-auto mx-2 max-p830:mx-auto max-p470:mx-[-30px] max-p456:max-w-[300px] max-p456:max-h-[250px] max-p456:mx-[0px] max-p360:max-w-[250px] max-p360:mx-[30px] focus-visible:outline-none' />
             <h2 className='w-[350px] text-3xl font-semibold mx-auto mx-2 max-p830:mx-auto max-p470:mx-[-30px]'>{text[index]}</h2>
           </div>
         ))}
