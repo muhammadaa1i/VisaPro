@@ -51,7 +51,7 @@ export default function Carousel3() {
     <Slider {...settings}>
       {[x1, x2, x3, x4, x5, x6].map((image, index) => (
         <div key={index} className="slide max-p1320:px-20 max-p1160:px-4 max-p992:mt-3">
-          <div className="flex justify-center items-center h-[800px] max-p1320:mx-auto max-p1320:w-[1000px] max-p1320:h-[700px] max-p1024:w-[800px] max-p1024:h-[600px] max-p830:w-[600px] max-p830:h-[400px] max-p640:w-[500px] max-p560:w-[400px] max-p560:h-[300px] max-p456:max-w-[350px] max-p456:max-h-[250px] max-p456:px-3 max-p360:px-0 max-p360:max-w-[250px] max-p360:max-h-[200px]">
+          <div className="flex justify-center items-center max-w-[900px] w-full mx-auto h-[600px] max-p1320:mx-auto max-p1320:w-[800px] max-p1320:h-[500px] max-p1024:w-[700px] max-p1024:h-[400px] max-p830:w-[600px] max-p830:h-[300px] max-p640:w-[500px] max-p560:w-[400px] max-p560:h-[250px] max-p456:max-w-[350px] max-p456:max-h-[200px] max-p456:px-3 max-p360:px-0 max-p360:max-w-[250px] max-p360:max-h-[150px]">
             <img
               loading="lazy"
               src={image}

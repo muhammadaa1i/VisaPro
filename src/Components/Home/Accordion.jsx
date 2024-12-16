@@ -37,7 +37,7 @@ const Accordion = () => {
                 `font-sans w-[200px] leading-none text-center text-[15px] px-4 py-3 m-1 border-none rounded-md cursor-pointer transition-colors duration-300 ease-in-out
                 ${ownerState.selected
                   ? 'bg-[#f00] text-white'
-                  : 'bg-[#292D31] text-white hover:bg-[#f00]'
+                  : 'bg-[#292D31] text-white hover:bg-[#292D31]'
                 }`,
                 resolvedSlotProps?.className,
               )
